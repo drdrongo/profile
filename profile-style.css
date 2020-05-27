@@ -1,3 +1,5 @@
+
+
 body {
   background-color: #F7F9FB;
   font-family: 'Raleway', sans-serif;
@@ -17,14 +19,13 @@ h1, h2 {
 }
 
 .container {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0.84) 67%,rgba(174,208,212,1) 80%,rgba(50,136,147,1) 100%,rgba(50,136,147,1) 101%);
   border-radius: 25px;
   padding: 3% 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   text-align: center;
-  min-width: 40em;
 }
 
 .card-left {
@@ -38,7 +39,8 @@ h1, h2 {
   float: left;
   text-align: center;
   width: 33%;
-  overflow: hidden;
+  padding-top: 100px;
+
 }
 
 .btn-blue {
@@ -105,27 +107,6 @@ h1, h2 {
   transform: translateY(1px);
   box-shadow: inset 0 1px 4px lightgrey;
 }
-/*
-.btn-blue-small {
-  background-color: #3797A4;
-  border: none;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px #999;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.btn-blue-small:hover {
-  background-color: rgb(50, 136, 147);
-  color: white;
-}
-
-.btn-blue-small:active {
-  box-shadow: 0 0px #666;
-  transform: translateY(2px);
-}*/
 
 .btn-sml {
   padding: 8px 16px;
@@ -136,4 +117,31 @@ h1, h2 {
 .btn-sml:active {
   box-shadow: 0 0px #666;
   transform: translateY(2px);
+}
+
+@media(max-width: 600px) {
+  .bar-white li {
+    width: 50px;
+    float: left;
+    clear: left;
+  }
+
+  .bar-white {
+    width: 50%;
+    margin-top: 50px;
+    top: 50px;
+    bottom: auto;
+    text-align: center;
+  }
+
+  .card-left {
+    width: 100%;
+    float: auto;
+  }
+
+  .card-right {
+
+    float: auto;
+    visibility: hidden;
+  }
 }
